@@ -11,7 +11,7 @@ const Blog = ({ pageContext }) => {
 
         const dateObj = new Date(date)
         return dateObj.toLocaleDateString()
-    }
+    }    
 
     return (
         <Layout>
