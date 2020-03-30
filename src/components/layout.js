@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
+  return ( 
     <>
       <Header siteTitle={data.site.siteMetadata.title} siteDesc={data.site.siteMetadata.description} />
       <Container>

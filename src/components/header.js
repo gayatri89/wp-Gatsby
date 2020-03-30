@@ -22,7 +22,7 @@ const Header = ({ siteTitle, siteDesc }) => (
         justifyContent: `space-between`,
       }}
     >
-      <div className="logo"
+      <div className="logo" 
         style={{
           display: `flex`,
           flexFlow: `row nowrap`,

@@ -20,7 +20,7 @@ const Post = ({ pageContext }) => {
             <span style={{marginLeft: `75%`}} className="post-meta">Posted by <Link to={`/user/${author.slug}`}>{author.name}</Link> | { formatDate(date) }</span>
             <br /><div dangerouslySetInnerHTML={{ __html: content }}></div>
         </Layout>
-    )
+    ) 
 }
 
 export default Post
