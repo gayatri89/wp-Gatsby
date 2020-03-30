@@ -7,8 +7,12 @@ import Header from "./header"
 import Sidebar from "./sidebar"
 import RecentPosts from './recent-posts'
 import "./layout.css"
-import igIcon from '../images/instagram-icon.svg'
-import twtrIcon from '../images/twitter-icon.svg'
+import fbIcon from '../images/fb-img.png'
+import gmIcon from '../images/gm-img.png'
+import instIcon from '../images/instagrm.png'
+import pintIcon from '../images/pinterest.png'
+import ytcon from '../images/yt-img.png'
+import twtrIcon from '../images/tw-img.png'
 
 const Container = styled.div`
   margin: 0 auto;
@@ -75,19 +79,32 @@ const Layout = ({ children }) => {
 
           </Sidebar> */}
         </PageContent>
-
+<hr style={{border:'1px solid #904a8e'}}/>
         <Footer>
-          <Socials className="social-icons">
-          <a href="https://twitter.com/crocdomains">
-              <img src={twtrIcon} alt="twitter icon" />
+          <a style={{marginTop:'20px'}} href="">Bangalore</a> | <a href="">Chennai</a> | <a href="">Mumbai</a> | <a href="">Pune</a> | <a href="">Noida</a> | <a href="">Gurgram</a> | <a href="">Chandigarh</a> | <a href="">New Delhi</a>
+        <Socials style={{marginLeft:'70%'}} className="social-icons">
+          <a href="https://twitter.com/CloudnineCare">
+              <img style={{width:'35px',height:'37px'}} src={twtrIcon} alt="twitter icon" />
             </a>
-            <a href="https://instagram.com/crocdesigns">
-              <img src={igIcon} alt="instagram icon" />
+            <a href="https://www.facebook.com/CloudnineCare/">
+              <img style={{width:'35px',height:'37px'}} src={fbIcon} alt="instagram icon" />
+            </a>
+            <a href="https://www.youtube.com/user/Cloudninecare">
+              <img style={{width:'35px',height:'37px'}}  src={ytcon} alt="twitter icon" />
+            </a>
+            <a href="https://www.linkedin.com/company/cloudninehospitals/">
+              <img style={{width:'35px',height:'37px'}} src={gmIcon} alt="instagram icon" />
+            </a>
+            <a href="https://www.instagram.com/cloudnine_care/">
+              <img style={{width:'35px',height:'37px'}} src={instIcon} alt="twitter icon" />
+            </a>
+            <a href="https://in.pinterest.com/cloudnineindia/">
+              <img style={{width:'35px',height:'37px'}} src={pintIcon} alt="instagram icon" />
             </a>
           </Socials>
-          © {new Date().getFullYear()} Alex Crocker, Built with
+          <div style={{marginLeft:'35%'}}>© {new Date().getFullYear()} Alex Crocker, Built with Gatsby</div>
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          
         </Footer>
       </Container>
     </>

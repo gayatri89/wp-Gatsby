@@ -32,20 +32,22 @@ const Blog = ({ pageContext }) => {
                         }}
                     >
                         <h2 style={{margin: 0}}>{post.title}</h2>
-                        <span className="post-meta">Posted by <Link to={`/user/${post.author.slug}`}>{post.author.name}</Link> | { formatDate(post.date) }</span>
                         <div dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
+                        <span style={{marginLeft: `75%`}} className="post-meta">Posted by <Link to={`/user/${post.author.slug}`}>{post.author.name}</Link> <br />  { formatDate(post.date) }</span>
                         <Link to={`/blog/${post.slug}`}
                             style={{
                                 width: `200px`,
                                 height: `40px`,
                                 lineHeight: `40px`,
                                 borderRadius: `6px`,
-                                backgroundColor: `#F46912`,
+                                backgroundColor: `#eb549b`,
                                 color: `#ffffff`,
                                 textTransform: `uppercase`,
                                 textDecoration: `none`,
                                 textAlign: `center`,
                                 marginTop: `25px`,
+                                marginLeft:'auto',
+                                marginRight:'auto'
                             }}
                         >Read More</Link>
                     </article>

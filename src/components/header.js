@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import logo from '../images/gatsby-icon.png'
+import logo from '../images/logo.png'
 
 const Header = ({ siteTitle, siteDesc }) => (
   <header
@@ -29,7 +29,7 @@ const Header = ({ siteTitle, siteDesc }) => (
           alignItems: `center`,
         }}
       >
-        <img src={logo} alt="logo" width="100" style={{display: 'inline-block', marginBottom: 0, marginRight: `15px`}} />
+        <Link to="../" ><img src={logo} alt="logo" width="100" style={{display: 'inline-block', marginBottom: 0, marginRight: `15px`}} /></Link>
         <div className="title-group" style={{display: `flex`, flexDirection: `column`, justifyContent: `center`, alignItems: `flex-start`}}>
           <h1 style={{ margin: 0, display: 'inline-block', fontFamily: `Marta, sans-serif`, fontSize: '1.5rem', fontWeight: `bold` }}>
             <Link

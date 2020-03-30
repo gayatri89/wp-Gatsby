@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-module.exports = {
+module.exports = { 
   siteMetadata: {
     title: `Blog Cloudnine Fertility `,
     description: `Cloudnine Fertility blog`,
