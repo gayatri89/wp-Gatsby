@@ -11,23 +11,8 @@ const Header = ({ siteTitle, siteDesc }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div className="header-wrap"
-      style={{
-        margin: `0 auto`,
-        maxWidth: 1170,
-        padding: `1.45rem 1.0875rem`,
-        display: `flex`,
-        flexFlow: `row wrap`,
-        alignItems: `center`,
-        justifyContent: `space-between`,
-      }}
-    >
-      <div className="logo" 
-        style={{
-          display: `flex`,
-          flexFlow: `row nowrap`,
-          alignItems: `center`,
-        }}
+    <div className="header-wrap">
+      <div className="logo"
       >
         <Link to="../" ><img src={logo} alt="logo" width="100" style={{display: 'inline-block', marginBottom: 0, marginRight: `15px`}} /></Link>
         <div className="title-group" style={{display: `flex`, flexDirection: `column`, justifyContent: `center`, alignItems: `flex-start`}}>

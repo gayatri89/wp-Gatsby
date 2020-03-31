@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
 const Blog = ({ pageContext }) => {
     const { posts } = pageContext
 
@@ -21,32 +19,12 @@ const Blog = ({ pageContext }) => {
             { 
                 posts.map(post => (
                     <article className="card post-card" id={`post-${post.id}`} key={post.id}
-                        style={{
-                            display: `flex`,
-                            flexDirection: `column`,
-                            justifyContent: `flex-start`,
-                            alignItems: `flex-start`,
-                            padding: `25px`,
-                            boxShadow: `rgb(236, 236, 236) 3px 3px 10px 0`,
-                            borderRadius: `6px`,
-                        }}
+                        
                     > 
                         <h2 style={{margin: 0}}>{post.title}</h2>
                         <div dangerouslySetInnerHTML={{ __html: post.excerpt }}></div>
-                        <span style={{marginLeft: `75%`}} className="post-meta">Posted by <Link to={`/user/${post.author.slug}`}>{post.author.name}</Link> | { formatDate(post.date) }</span>
-                        <Link to={`/blog/${post.slug}`}
-                            style={{
-                                width: `200px`,
-                                height: `40px`,
-                                lineHeight: `40px`,
-                                borderRadius: `6px`,
-                                backgroundColor: `#eb549b`,
-                                color: `#ffffff`,
-                                textTransform: `uppercase`,
-                                textDecoration: `none`,
-                                textAlign: `center`,
-                                marginTop: `25px`,
-                            }}
+                        <span  className="post-meta">Posted by <Link to={`/user/${post.author.slug}`}>{post.author.name}</Link> | { formatDate(post.date) }</span>
+                        <Link to={`/blog/${post.slug}`} className="readmore"
                         >Read More</Link>
                     </article>
                 ))

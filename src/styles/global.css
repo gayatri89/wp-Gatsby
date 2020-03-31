@@ -1,0 +1,42 @@
+html {
+    background-color: lavenderblush;
+  }
+  .post-meta{
+      margin-left: 75%
+  }
+
+  .post-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px;
+    box-shadow: rgb(236, 236, 236) 3px 3px 10px 0px;
+    border-radius: 6px;
+  }
+  .readmore{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
+    background-color: rgb(235, 84, 155);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .header-wrap{
+    margin: 0px auto;
+    max-width: 1170px;
+    padding: 1.45rem 1.0875rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+  .logo{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
